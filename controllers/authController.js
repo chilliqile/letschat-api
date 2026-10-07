@@ -48,3 +48,11 @@ export async function postLogout(req, res, next) {
     });
   });
 }
+
+export async function checkAuth(req, res) {
+  if (req.user) {
+    return res.sendStatus(200);
+  } else {
+    return res.sendStatus(401);
+  }
+}

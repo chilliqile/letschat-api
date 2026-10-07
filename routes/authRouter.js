@@ -11,5 +11,6 @@ authRouter.post(
 );
 authRouter.post("/sign-up", authController.postSignUp);
 authRouter.post("/logout", isAuthenticated, authController.postLogout);
+authRouter.get("/me", authController.checkAuth);
 
 export default authRouter;
