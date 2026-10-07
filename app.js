@@ -35,7 +35,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use("/", authRouter);
+app.use("/auth", authRouter);
 app.use("/users", userRouter);
 app.use("/messages", messageRouter);
 app.use("/profile", profileRouter);
