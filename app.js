@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:5173", "https://csdropout.github.io"],
+    origin: ["http://localhost:5173", "https://chilliqile.github.io"],
   }),
 );
 
